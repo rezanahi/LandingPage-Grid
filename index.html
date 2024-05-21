@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سفارش غذا</title>
+  <link rel="icon" href="./images/logo.png" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/media.css">
+  <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <img class="nav__logo" src="./images/logo.png" alt="logo" />
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-link nav__menu-link--active" href="#">خانه</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#">منو</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#">تخفیف ها</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#">اخبار</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#">تماس باما</a>
+          </li>
+        </ul>
+        <div class="nav__links">
+          <a class="nav__links-button" href="#">ورود</a>
+          <a class="nav__links-button nav__links-button--red-outline" href="#">ثبت نام</a>
+        </div>
+        <div class="nav__burger-menu">
+          <input type="checkbox" id="burger-menu-checkbox" hidden />
+          <label class="nav__burger-menu-label" for="burger-menu-checkbox">
+
+            <img src="./images/Burger.png" alt="" />
+
+            <svg class="nav__burger-menu-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+
+          </label>
+          <ul class="nav__menu--sidebar">
+            <li class="nav__menu-item">
+              <a class="nav__menu-link nav__menu-link--active" href="#">خانه</a>
+            </li>
+            <li class="nav__menu-item">
+              <a class="nav__menu-link" href="#">منو</a>
+            </li>
+            <li class="nav__menu-item">
+              <a class="nav__menu-link" href="#">تخفیف ها</a>
+            </li>
+            <li class="nav__menu-item">
+              <a class="nav__menu-link" href="#">اخبار</a>
+            </li>
+            <li class="nav__menu-item">
+              <a class="nav__menu-link" href="#">تماس باما</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero-section">
+        <div class="section__content">
+          <h1 class="section__title">
+            غذای مورد علاقت رو سفارش بده !
+          </h1>
+          <p class="section__description">
+            همبرگر طعم های مختلفی داره ، تاحالا همبرگر گوشت و پنیر رو امتحان کردی؟
+          </p>
+          <div class="section__order">
+            <div class="total-order">
+              <span class="total-order-text">قیمت کل :</span>
+              <span class="total-order-price">56 تومن</span>
+            </div>
+            <div class="order-links">
+              <div class="order-amount">
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+                <span> 3 </span>
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                  </svg>
+                </button>
+              </div>
+              <button class="order-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <span>سفارش دهید</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="section__images">
+          <img src="./images/hero-burger.png" alt="">
+          <div class="fixed-delivery">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 24 24" fill="currentColor"
+                class="w-6 h-6">
+                <path fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>زمان تحویل</span>
+            </div>
+            <span>30دقیقه</span>
+          </div>
+        </div>
+        <div class="mobile_section__order">
+          <div class="total-order">
+            <span class="total-order-text">قیمت کل :</span>
+            <span class="total-order-price">56 تومن</span>
+          </div>
+          <div class="order-links">
+            <div class="order-amount">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+              </button>
+              <span> 3 </span>
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                </svg>
+              </button>
+            </div>
+            <button class="order-button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              <span>سفارش دهید</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="container">
+        <h1 class="menu__title">
+          منو
+        </h1>
+        <span class="menu__title-border"></span>
+        <div class="categories">
+          <button class="category category--active">
+            <img class="category__img" src="/images/Badge Discount.png" alt="">
+            <span class="category__name">پرفروش ترین ها</span>
+          </button>
+          <button class="category">
+            <img class="category__img" src="/images/Burger.png" alt="">
+            <span class="category__name">همبرگر</span>
+          </button>
+          <button class="category">
+            <img class="category__img" src="/images/Cup 01.png" alt="">
+            <span class="category__name">نوشیدنی</span>
+          </button>
+          <button class="category">
+            <img class="category__img" src="/images/Ice Cream.png" alt="">
+            <span class="category__name">دسر</span>
+          </button>
+          <button class="category">
+            <img class="category__img" src="/images/Serving Plate.png" alt="">
+            <span class="category__name">مرغ سوخاری</span>
+          </button>
+        </div>
+        <div class="products">
+          <div class="product">
+            <div class="product__discount-badge-wrapper product__discount-badge-wrapper--hidden">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img" src="./images/2.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">همبرگر گوشت و پنیر</h3>
+            <p class="produc__description">بال مرغ سرخ شده ، سیب زمینی سرخ شده</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">56تومان</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__discount-badge-wrapper">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img" src="./images/1.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">کومبو خوشمزه</h3>
+            <p class="produc__description">بال مرغ سرخ شده ، سیب زمینی سرخ شده</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">113تومان</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__discount-badge-wrapper product__discount-badge-wrapper--hidden">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img"
+                src="./images/high-angle-shot-basket-delicious-fried-chicken-with-hot-sauce-black-surface 1.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">مرغ با سس تند</h3>
+            <p class="produc__description">سس چیلی گارلیک تند</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">76تومان</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__discount-badge-wrapper product__discount-badge-wrapper--hidden">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img" src="./images/20220905-113313 1.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">سالاد میکس وینگار</h3>
+            <p class="produc__description">سالاد ، گوجه فرنگی ، وینگار</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">50تومان</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__discount-badge-wrapper product__discount-badge-wrapper--hidden">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img" src="./images/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">برگر مرغ</h3>
+            <p class="produc__description">مرغ سوخاری</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">52تومان</span>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__discount-badge-wrapper">
+              <img class="product__discount-badge" src="./images/Badge-Discount.png" alt="">
+            </div>
+            <div class="product__img-wrapper">
+              <img class="produc__img" src="./images/ice_tea_2021_11_30_16_48_46_utc 1.png"></img>
+              <span class="product__img-back"></span>
+            </div>
+            <h3 class="product__name">لیپتون</h3>
+            <p class="produc__description">چای لیپتون</p>
+            <div class="product__rate">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <img class="product__rate-star" src="./images/Star 1.png" alt="">
+              <span class="product__rate-text">(5)</span>
+            </div>
+            <div class="product__bottum">
+              <button class="product__add-to-cart">
+                <img src="./images/icon.png" alt="">
+              </button>
+              <span class="product__price">22تومان</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="products__link">مشاهده همه</a>
+      </div>
+    </section>
+    <section class="sales-off">
+      <div class="container">
+        <div class="section-title">
+          <span class="title-border"></span>
+          <h1 class="title">
+            فروش ویژه
+          </h1>
+        </div>
+
+        <div class="offs">
+          <div class="off">
+            <div class="off-category-wrapper">
+              <span class="off-category-wrapper__title">فست فود</span>
+              <span class="off-category-wrapper__line"></span>
+            </div>
+            <h2 class="off__title">کومبو خوشمزه</h2>
+            <p class="off__description">یک کومبو خوشمزه بخر <br>یک کوکاکولا ببر</p>
+            <div class="off__price">
+              <del class="off__price-old">56 تومان</del>
+              <span class="off__price-new">43 تومان</span>
+            </div>
+            <button class="off__button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              حالا بخرید
+            </button>
+            <img class="off__img" src="./images/1.png" alt="">
+          </div>
+
+          <div class="off off--active">
+            <div class="off-category-wrapper off-category-wrapper--active">
+              <span class="off-category-wrapper__title">فست فود</span>
+              <span class="off-category-wrapper__line"></span>
+            </div>
+            <h2 class="off__title">سالاد میکس وینگر</h2>
+            <p class="off__description">به فکر سلامتیت باش</p>
+            <div class="off__price">
+              <del class="off__price-old">10 تومان</del>
+              <span class="off__price-new">5 تومان</span>
+            </div>
+            <button class="off__button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              حالا بخرید
+            </button>
+            <img class="off__img" src="./images/20220905-113313 1.png" alt="">
+          </div>
+
+          <div class="off">
+            <div class="off-category-wrapper">
+              <span class="off-category-wrapper__title">فست فود</span>
+              <span class="off-category-wrapper__line"></span>
+            </div>
+            <h2 class="off__title">برگر مرغ</h2>
+            <p class="off__description">مرغ سرخ شده</p>
+            <div class="off__price">
+              <del class="off__price-old">18 تومان</del>
+              <span class="off__price-new">12 تومان</span>
+            </div>
+            <button class="off__button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              حالا بخرید
+            </button>
+            <img class="off__img" src="./images/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app">
+      <div class="app__back">
+        <div class="container">
+          <div class="app-container">
+            <div class="app__image-wrapper">
+              <img class="app__image" src="./images/Group 23.png" alt="">
+            </div>
+            <div class="app__content">
+              <h3 class="app__header-title">پیشنهاد های ویژه و بیشتر</h3>
+              <h1 class="app__title">اپلیکیشن موبایل مک دونالد</h1>
+              <p class="app__description">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+              </p>
+              <div class="app__links">
+                <a class="app__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64">
+                    <path
+                      d="M54.166,19.783c-0.258,0.162-6.401,3.571-6.401,11.13c0.29,8.621,7.752,11.644,7.88,11.644	c-0.128,0.162-1.127,4.119-4.085,8.267C49.213,54.398,46.607,58,42.65,58c-3.764,0-5.115-2.381-9.458-2.381	c-4.664,0-5.984,2.381-9.555,2.381c-3.957,0-6.756-3.795-9.232-7.335c-3.216-4.633-5.95-11.903-6.047-18.883	c-0.065-3.699,0.644-7.335,2.444-10.423c2.541-4.312,7.077-7.238,12.031-7.335c3.795-0.128,7.173,2.606,9.49,2.606	c2.22,0,6.37-2.606,11.065-2.606C45.415,14.026,50.82,14.636,54.166,19.783z M32.002,13.285c-0.676-3.378,1.19-6.756,2.927-8.911	C37.149,1.769,40.655,0,43.678,0c0.193,3.378-1.03,6.691-3.216,9.104C38.5,11.71,35.122,13.671,32.002,13.285z">
+                    </path>
+                  </svg>
+                  در اپ استور دانلود کنید
+                </a>
+                <a class="app__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                      d="M 7.125 2 L 28.78125 23.5 L 34.71875 17.5625 L 8.46875 2.40625 C 8.03125 2.152344 7.5625 2.011719 7.125 2 Z M 5.3125 3 C 5.117188 3.347656 5 3.757813 5 4.21875 L 5 46 C 5 46.335938 5.070313 46.636719 5.1875 46.90625 L 27.34375 24.90625 Z M 36.53125 18.59375 L 30.1875 24.90625 L 36.53125 31.1875 L 44.28125 26.75 C 45.382813 26.113281 45.539063 25.304688 45.53125 24.875 C 45.519531 24.164063 45.070313 23.5 44.3125 23.09375 C 43.652344 22.738281 38.75 19.882813 36.53125 18.59375 Z M 28.78125 26.3125 L 6.9375 47.96875 C 7.300781 47.949219 7.695313 47.871094 8.0625 47.65625 C 8.917969 47.160156 26.21875 37.15625 26.21875 37.15625 L 34.75 32.25 Z">
+                    </path>
+                  </svg>
+                  در گوگل پلی دانلود کنید
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <div class="container">
+        <div class="location-container">
+          <h2 class="location__title">نزدیک ترین رستوران را پیدا کنید</h2>
+          <p class="location__description">آدرس نزدیک ترین رستوران ها به خود را ببینید</p>
+          <div class="location__input-wrapper">
+            <input class="location__input" type="text" placeholder="آدرس را تایپ کنید">
+            <button class="location__input-button">در نقشه ببینید</input>
+          </div>
+          <img class="location__back-image location__back-image--left" src="./images/20220905-113313 1.png" alt="">
+          <img class="location__back-image location__back-image--right" src="./images/burger_with_fried_chicken_2021_08_29_03_54_46_utc 1.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <section class="container-footer">
+        <div class="footer__info">
+          <div class="footer__info-logo">
+            <img src="./images/logo.png" alt="">
+            <span>مک دونالد</span>
+          </div>
+          <ul class="footer__info-social-medias">
+            <li>
+              <a href="#">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Facebook icon</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2A9.65,9.65,0,0,0,2,11.7a9.51,9.51,0,0,0,3.14,7.18.81.81,0,0,1,.27.56l0,1.78a.81.81,0,0,0,1.13.71l2-.87a.75.75,0,0,1,.53,0,11,11,0,0,0,2.9.38A9.7,9.7,0,1,0,12,2Zm6,7.46-2.93,4.66a1.5,1.5,0,0,1-2.17.4l-2.34-1.75a.6.6,0,0,0-.72,0l-3.16,2.4A.47.47,0,0,1,6,14.54L8.93,9.88a1.5,1.5,0,0,1,2.17-.4l2.34,1.75a.6.6,0,0,0,.72,0l3.16-2.4A.47.47,0,0,1,18,9.46Z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h5 class="footer__links-title">لینک های مفید</h5>
+          <ul class="footer__links-list">
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">منو</a></li>
+            <li><a href="#">فروش ویژه</a></li>
+            <li><a href="#">اخبار</a></li>
+            <li><a href="#">تماس باما</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__open">
+          <h5 class="footer__open-title">ساعات کاری</h5>
+          <ul class="footer__open-list">
+            <li>دوشنبه - جمعه : 9:00 تا 23:00</li>
+            <li>شنبه - 9:00 تا 16:00</li>
+            <li>یکشنبه - 9:00 تا 18:00</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
